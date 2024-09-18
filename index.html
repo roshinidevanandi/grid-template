@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color:cadetblue;
+            height: 85vh;
+            width: 55vw;
+            padding: 10px;
+            display: grid;
+            grid-template-areas:
+            "a1 a2 a3"
+            "a1 a5 a6"
+            "a4 a5 a7";
+            gap: 10px;
+
+            
+        }
+        .items{
+           
+            height: 180px;
+            width: 260px;
+        }
+        .i1{
+            grid-area: a1;
+            height: 400px;
+        }
+        .i2{
+            grid-area: a2;
+        }
+        .i3{
+            grid-area: a3;
+        }
+        .i4{
+            grid-area: a4;
+            
+           
+        }
+        .i5{
+            grid-area: a5;
+            height: 400px;
+        }
+        .i6{
+            grid-area: a6;
+            border: 6px dotted dodgerblue;
+        }
+        .i7{
+            grid-area: a7;
+            border: 4px dotted rgb(28, 235, 28);
+        }
+        h1{
+            font-size: 40px;
+            color: blue;
+        }
+        span{
+            color: rgb(237, 34, 68);
+        }
+        #s1{
+            color: orange;
+        }
+        body{
+            background-color: rgb(143, 149, 154);
+        }
+        .i1:hover{
+            border: 10px solid salmon;
+        }
+        .i2:hover{
+            border: 8px solid rgb(82, 82, 232);
+        }
+        .i3:hover{
+            border: 8px solid orangered;
+            height: 300px;
+            width: 300px;
+        }
+        .i4:hover{
+           border: 6px solid rgb(231, 138, 72);
+        }
+        .i5:hover{
+            border: 6px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <center>
+       <em><h1>Grid <span> Template</span> <span id="s1">areas</span></h1></em>
+    <div class="main">
+        <img src="./curology.webp" class="items i1">
+        <img src="./coffee cup.webp" class="items i2">
+        <img src="./flower pot.jpg" class="items i3">
+        <img src="./stool.avif" class="items i4">
+        <img src="./lamp.jpg" class="items i5">
+        <img src="./specs.jpg" class="items i6">
+        <img src="./camera.webp" class="items i7">
+    </div>
+    </center>
+</body>
+</html>
